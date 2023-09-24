@@ -1,4 +1,5 @@
-n = int(input())
-h=n%(60*24)//60
-m=n%60
-print(h, m)
+num = int(input())
+if (num % 4 == 0) and (num % 100 != 0) or (num % 400 == 0):
+    print('YES')
+else:
+    print('NO')
